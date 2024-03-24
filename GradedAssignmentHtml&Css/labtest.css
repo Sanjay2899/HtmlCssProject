@@ -1,0 +1,78 @@
+body{
+  overflow: hidden;
+}
+
+.container{
+  margin: 5% 10% ;
+  
+}
+
+.main{ 
+  display: grid;
+  grid-template-columns: auto auto;
+  box-shadow: 1px 1px 50px #5c5555;
+  overflow-y: scroll;
+  height: 550px;
+  scrollbar-width: 70px;
+}
+
+
+.main img{
+  width: 600px;
+  height: 550px;
+  margin-right: 5px;
+  position: fixed;
+  right: 160px;   
+}
+.main form{
+  padding: 40px;
+  margin-left: 30px;
+}
+.main form input{
+  border: none;
+  border-bottom: 1px solid black;
+}
+.btn{
+  text-align: left;
+  padding-left: 300px;
+  margin-top: 30px;
+}
+.btn button{
+  width: 100px;
+  height: 45px;
+  font-size: 20px;
+  color: white;
+  background-color: blueviolet;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 5% 5%;
+  }
+
+  .main img {
+    width: 120px;
+    height: 100%;
+    margin-right: 0;
+    position: static;
+    right: auto;
+  }
+
+  .main form {
+    padding: 20px;
+    margin-left: 0;
+  }
+
+  .btn {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .btn button {
+    width: 100px;
+    margin-left: 0;
+  }
+}
